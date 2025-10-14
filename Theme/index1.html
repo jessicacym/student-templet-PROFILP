@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Resume Theme</title>
+    <title>Yamin Cai - Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -17,9 +17,9 @@
     
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
     
-    <!-- ✅ 修改：HTTP改为HTTPS -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts HTTPS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
     
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
@@ -336,18 +336,17 @@ The experience begins with a simple button prompt, inviting users to interact th
 	</div><!--/ #footer -->
 
 	<!-- Video Modal 1 -->
-	<!-- ✅ 修改：移除 aria-hidden="true" -->
 	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" style="display: none;">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="videoModalLabel">CANALS OF ENGLAND</h4>
+					<h4 class="modal-title" id="videoModalLabel">Virtual Phone Chatting</h4>
 				</div>
 				<div class="modal-body">
 					<video id="portfolioVideo" width="100%" controls>
 						<source src="assets/video/1.mp4" type="video/mp4">
-						您的浏览器不支持视频播放。
+						Your browser does not support video playback.
 					</video>
 				</div>
 			</div>
@@ -355,18 +354,17 @@ The experience begins with a simple button prompt, inviting users to interact th
 	</div>
 
 	<!-- Video Modal 2 -->
-	<!-- ✅ 修改：移除 aria-hidden="true" -->
 	<div class="modal fade" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="videoModal2Label" style="display: none;">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="videoModal2Label">SANKEY</h4>
+					<h4 class="modal-title" id="videoModal2Label">Emotional Visualization</h4>
 				</div>
 				<div class="modal-body">
 					<video id="portfolioVideo2" width="100%" controls>
 						<source src="assets/video/2.mp4" type="video/mp4">
-						您的浏览器不支持视频播放。
+						Your browser does not support video playback.
 					</video>
 				</div>
 			</div>
@@ -378,7 +376,7 @@ The experience begins with a simple button prompt, inviting users to interact th
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.js"></script>
     <script>
-		// 当Modal关闭时暂停视频播放
+		// Pause video when Modal closes
 		$('#videoModal').on('hidden.bs.modal', function () {
 			var video = document.getElementById('portfolioVideo');
 			video.pause();
