@@ -54,6 +54,33 @@
             font-size: 20px;
             color: white;
         }
+        
+        /* Process images styling - uniform size and alignment */
+        .process-img-container {
+            height: 250px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .process-img-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        
+        /* Modal text color - BLACK for process modals with !important */
+        .modal-description {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .modal-description p {
+            color: #000000 !important;
+        }
     </style>
   </head>
 
@@ -268,23 +295,29 @@
 				</div>
 				<div class="col-lg-3">
 						<p>emotional visualization</p>
-					<p><more>This interactive kaleidoscope visualization creates an immersive emotional experience through speech recognition and dynamic visual response. The project detects five key emotions—happy, sad, angry, peace, and boring—through voice input, transforming each emotion into a unique visual representation using color palettes and particle effects. When users speak these emotion keywords, the system responds with color transitions that reflect emotional states: warm yellows and oranges for happiness, cool blues for sadness, vibrant reds for anger, calming greens for peace, and muted grays for boredom. The design features a 3x3 grid of kaleidoscope patterns that rotate and transform, complemented by particle effects that burst across the screen during emotional transitions. This project demonstrates how sound input can create meaningful visual feedback, bridging the gap between verbal expression and aesthetic representation.<br/><br/>
+					<p><more>This interactive kaleidoscope visualization creates an immersive emotional experience through speech recognition and dynamic visual response. <br/><br/>
 						<sm><i class="icon-tag"></i>  design</sm></more> 
 					</p>
 				</div>
 				
-				<!-- Three New Projects in a Row -->
+				<!-- Three Process Images with Uniform Size -->
 				<div class="col-lg-3 col-lg-offset-3 centered">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt="Project 3" style="cursor: pointer;" data-toggle="modal" data-target="#videoModal3"></p>
-					<h5>Project 3 Title</h5>
+					<div class="process-img-container">
+						<img src="assets/img/port03.jpg" alt="First Process" data-toggle="modal" data-target="#videoModal3">
+					</div>
+					<h5>First Tried Process</h5>
 				</div>
 				<div class="col-lg-3 centered">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt="Project 4" style="cursor: pointer;" data-toggle="modal" data-target="#videoModal4"></p>
-					<h5>Project 4 Title</h5>
+					<div class="process-img-container">
+						<img src="assets/img/port04.jpg" alt="Second Process" data-toggle="modal" data-target="#videoModal4">
+					</div>
+					<h5>Second Tried Process</h5>
 				</div>
 				<div class="col-lg-3 centered">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt="Project 5" style="cursor: pointer;" data-toggle="modal" data-target="#videoModal5"></p>
-					<h5>Project 5 Title</h5>
+					<div class="process-img-container">
+						<img src="assets/img/port05.jpg" alt="Third Process" data-toggle="modal" data-target="#videoModal5">
+					</div>
+					<h5>Third Tried Process</h5>
 				</div>
 		
 		</div><!--/.row -->
@@ -368,15 +401,15 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="videoModal3Label">Project 3 Title</h4>
+					<h4 class="modal-title" id="videoModal3Label">First Process</h4>
 				</div>
 				<div class="modal-body">
 					<video id="portfolioVideo3" width="100%" controls>
 						<source src="assets/video/3.mp4" type="video/mp4">
 						Your browser does not support video playback.
 					</video>
-					<div style="margin-top: 20px;">
-						<p>This is the description for Project 3. You can add detailed information about this project here, explaining the concept, technologies used, and the impact of the work.</p>
+					<div class="modal-description" style="color: #000000 !important;">
+						<p style="color: #000000 !important;">For the first time, tried the fireworks particle effects and text change effects, matching the color changes of various moods, but I made a total of five moods but only four can be displayed. I can't find the reason, and the changes are a bit too monotonous.</p>
 					</div>
 				</div>
 			</div>
@@ -389,15 +422,15 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="videoModal4Label">Project 4 Title</h4>
+					<h4 class="modal-title" id="videoModal4Label">Second Process</h4>
 				</div>
 				<div class="modal-body">
 					<video id="portfolioVideo4" width="100%" controls>
 						<source src="assets/video/4.mp4" type="video/mp4">
 						Your browser does not support video playback.
 					</video>
-					<div style="margin-top: 20px;">
-						<p>This is the description for Project 4. You can add detailed information about this project here, explaining the concept, technologies used, and the impact of the work.</p>
+					<div class="modal-description" style="color: #000000 !important;">
+						<p style="color: #000000 !important;">The second particle effect tries to be full screen, beautify the text, and expand the pattern changes to the entire screen.</p>
 					</div>
 				</div>
 			</div>
@@ -410,15 +443,15 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="videoModal5Label">Project 5 Title</h4>
+					<h4 class="modal-title" id="videoModal5Label">Third Process</h4>
 				</div>
 				<div class="modal-body">
 					<video id="portfolioVideo5" width="100%" controls>
 						<source src="assets/video/5.mp4" type="video/mp4">
 						Your browser does not support video playback.
 					</video>
-					<div style="margin-top: 20px;">
-						<p>This is the description for Project 5. You can add detailed information about this project here, explaining the concept, technologies used, and the impact of the work.</p>
+					<div class="modal-description" style="color: #000000 !important;">
+						<p style="color: #000000 !important;">The third attempt used two different ways of changing the shape: rotation and line effects, while keeping the color and text changes of the previous attempts when shouting out the corresponding emotions.</p>
 					</div>
 				</div>
 			</div>
