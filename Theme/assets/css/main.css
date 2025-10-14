@@ -173,14 +173,15 @@ a:after {
     background-size: cover;
 }
 
+/* 修改：名字颜色改为蓝色 #2c3e50 */
 #headerwrap h1 {
 	font-size: 80px;
-	color: white;
+	color: #2c3e50;
 }
 
 #headerwrap h3 {
 	font-size: 20px;
-	color: white;
+	color: #2c3e50;
 }
 
 /* Intro Wrap */
